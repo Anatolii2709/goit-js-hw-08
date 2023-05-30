@@ -19,7 +19,7 @@ function onFormSubmit(evt) {
     return;
   }
 
-  console.log(userForm);
+  console.log(JSON.parse(localStorage.getItem(STORAGE_KEY)));
   localStorage.removeItem(STORAGE_KEY);
   evt.currentTarget.reset();
 }
